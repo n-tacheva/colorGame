@@ -1,0 +1,58 @@
+body{
+    background-color: #232323;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornflowerblue;
+    
+}
+.square{
+    width: 30%;
+    background: rgb(255, 0, 200);
+    padding-bottom: 30%;
+    border-radius: 15%;
+    float: left;
+    margin: 1.66%;
+}
+.container-small{
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 30px;
+    vertical-align: middle;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.wrong{
+    visibility: hidden;
+}
+.selected{
+    background-color:cornflowerblue;
+    color: white;
+    padding: 8px 4px 4px 4px;
+}
+.btnLevel{
+    float: right;
+    height: 30px;
+}
+.btnLevel input{
+    visibility: hidden;
+}
+#correct{
+    height: 200px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    margin-top:10px;
+}
+#buttons{
+    height: 30px;
+    background-color: white;
+}
+#comment{
+    margin-left: 22%;
+    color: black;
+}
+.defaultHidden{
+    display: none;
+}

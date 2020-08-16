@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorGame</title>
+    <link rel="stylesheet" href="colorGame.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://images.vexels.com/media/users/3/131128/isolated/preview/6fba8cf7ada5d2ef1055345eefc35901-idea-bulb-icon-by-vexels.png" width="30" height="30"
+                class="d-inline-block align-top" alt="" loading="lazy">
+            The great guessing game
+        </a>
+    </nav>
+    <div class="container">
+        <div id="correct">
+            <h1>What color is that</h1>
+        </div>
+        <div id="buttons">
+            <div class="container-small">
+                <span class="btn btn-outline-secondary" id="newGame">NEW COLORS</span>
+                <span id="comment"></span>
+                <div class="btnLevel">
+                    <input type="radio" name="Level" id="easy" checked>
+                    <label class="selected active btn btn-outline-secondary " for="easy" id="labelEasy">Easy</label>
+                </div>
+                <div class="btnLevel">
+                    <input type="radio" name="Level" id="hard">
+                    <label class="btn btn-outline-secondary" for="hard" id="labelHard">Hard</label><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-small">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square defaultHidden"></div>
+            <div class="square defaultHidden"></div>
+            <div class="square defaultHidden"></div>
+        </div>
+        <div class="modal" id="correctModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Correct!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary " id="modalNewGame">New game</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="colorGame.js"></script>
+</body>
+
+</html>
